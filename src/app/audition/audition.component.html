@@ -1,0 +1,96 @@
+
+<div class="container-fluid">
+  <div class="jumbotron bg-white">
+    <div id="empty-img"></div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="audition-email" style='font-family: "cairo-bold", "arial", sans-serif;'>اسم المنشأة</label>
+          <input name="email" type="email" class="form-control" id="audition-email" aria-describedby="emailHelp"
+            placeholder="البريد الألكتروني">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div id="upload-img">
+          <img [src]="url" alt="" width="150" height="150"><br>
+        </div>
+      </div>
+    </div>
+
+    <input type="file" name="uploadbtn" id="uploadbtn" (change)="selectImage($event)" accept="image/*">
+
+    <div id="text">
+      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور<br><br>
+      أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+    </div>
+
+    <form>
+      <div class="row">
+          <div class="col-sm-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" checked><span style="padding-right: 30px;">2018-1-2 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 10:30م</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 30px;">2018-1-2 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 10:30م</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 30px;">2018-1-2 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 10:30م</span>
+              </label>
+            </div>                       
+          </div>
+          
+          <div class="col-sm-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 30px;">2018-1-2 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 10:30م</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 30px;">2018-1-2 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 10:30م</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 30px;">2018-1-2 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 10:30م</span>
+              </label>
+            </div>                       
+          </div>
+          
+        </div>
+    </form>
+        
+    <div id="map"></div>
+
+    <button id="sendbtn" class="btn">ارسال</button>
+  </div>
+</div>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    const uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+</script>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALrJTWRSyQZSzymt49SYq1LtE9y_kOrzk&callback=initMap">
+</script>

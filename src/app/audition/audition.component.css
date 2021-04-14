@@ -1,0 +1,98 @@
+.jumbotron {
+    text-align: right;
+    margin-right: 0;
+    width: 70vw;
+    border-top: solid 15px gold;
+    padding-top: 20px;
+    /* font-family: "cairo-bold", 'arial', sans-serif; */
+}
+
+@media only screen and (max-width: 992px) {
+    .jumbotron {
+        width: 90vw;
+    }
+}
+
+#empty-img {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(204, 200, 200);
+    float: right;
+    margin-left: 10px;
+}
+
+#audition-email {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#text {
+    width: 40%;
+    font-family: "cairo-bold", 'arial', sans-serif;
+    margin-top: -5%;
+    margin-bottom: 20px;
+}
+
+#upload-img {
+    float: left;
+}
+
+#uploadbtn {
+    float: left;
+    text-align: left;
+    margin-left: -10%;
+}
+
+/* *********************************************** radio group ********************************************** */
+form {
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+input[type="Radio"]{
+    margin-left: 100px;
+    margin-right: 5px;
+}
+
+input[type='radio'] {
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:1px solid darkgray;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 5px 0px gray inset;
+}
+input[type='radio']:hover {
+    box-shadow:0 0 5px 0px orange inset;
+}
+input[type='radio']:before {
+    content:'';
+    display:block;
+    width:40%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%;    
+}
+input[type='radio']:checked:before {
+    background:gold;
+}
+
+/* *********************************************************************************************************** */
+#sendbtn {
+    color: gold;
+    background-color: black;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    transform: translateY(80px);
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* ****************************************** map ************************************************** */
+
+#map {
+    height: 400px;
+    width: 100%;
+    border: solid 1px black;
+}

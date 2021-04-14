@@ -1,0 +1,59 @@
+
+<div id="top-bar" class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-4 " style="z-index: 999; text-align: right;">
+      أهلاً، علي عماد <a routerLink="" style="color: black;"><i class="fas fa-cog"></i></a>
+    </div>
+
+    <div id="social-bar" class="col-sm-8" style="z-index: 999;">
+      <ul>
+        <li class="separate"><a routerLink="">الرئيسية </a></li>
+        <li class="separate"><a routerLink="">احنا مين </a></li>
+        <li><a routerLink="">اتصل بنا </a></li>
+        <li><a routerLink=""><i class="fab fa-instagram"></i></a></li>
+        <li><a routerLink=""><i class="fab fa-twitter"></i></a></li>
+        <li><a routerLink=""><i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="">U<i class="fas fa-star"></i>CAST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars" ></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="navbar-nav">
+            <a class="nav-link active" routerLink="">المواهب<span class="sr-only">(current)</span></a>
+            <a class="nav-link" routerLink="">المكتشفون</a>
+            <a class="nav-link" routerLink="">المؤلفون</a>
+            <a class="nav-link" routerLink="">فريق العمل</a>
+            <a class="nav-link" routerLink="">الاستوديو</a>
+            <a class="nav-link" routerLink="">التجارب المفتوحة</a>
+            
+          </div>
+        </div>
+    </div>
+    
+</nav>
+
+<div id="new-project" class="container-fluid" style="z-index: 999;">
+  <div style="z-index: 999;">
+    <a routerLink=""><i class="fas fa-star" style="font-size: 25px; "></i>إنشاء مشروع جديد</a>
+  </div>
+  
+</div>
+
+<div id="tabs" class="container-fluid">
+  <ul>
+    <li><a routerLink="">تعيين مدير المشروع </a></li>
+    <li><a routerLink="">تفاصيل المشروع </a></li>
+    <li><a routerLink="">الأدوار </a></li>
+    <li><a routerLink="">ردود الكاستينج </a></li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

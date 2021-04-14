@@ -1,0 +1,116 @@
+
+.navbar {
+    background-color: black;
+    font-family: 'cairo-light', 'arial', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    transform: scale(1, 2.5);
+    margin-left: 10px;
+    /* transform: scale(1, 2.5); */
+}
+
+.fa-bars {
+    color: white;
+}
+
+.fa-star {
+    font-size: 6px;
+    color: black;
+    border-radius: 50%;
+    background-color: gold;
+    padding: 1px;
+    vertical-align: middle;
+    margin: auto 5px auto 5px;
+}
+
+nav a + a:before{
+    content: " . ";
+    padding: 0 10px;
+}
+
+.navbar .active {
+    color: gold;
+}
+
+.nav-link {
+    font-family: "cairo-bold", 'arial', sans-serif;
+}
+
+@media only screen and (max-width: 992px) {
+    nav a + a:before{
+        content: ""; /* remove separator on medium screens */
+    }
+    nav a.nav-link, #social-bar li {
+        font-size: small;
+    }
+}
+
+/* ************************** top bar ********************************************* */
+#top-bar {
+    font-family: "cairo-bold", 'arial', sans-serif;
+    font-weight: bold;
+    z-index: 999;
+}
+
+#top-bar .row {
+    width: 100%;
+    margin-left: auto;
+}
+
+#social-bar ul li {
+    display:inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#social-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+li.separate + li:before{
+    content: " | ";
+    padding: 0 10px;
+}
+
+/* ************************** tabs *************************************************** */
+
+#new-project {
+    text-align: right;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#new-project a {
+    color: black;
+    text-decoration: none;
+}
+
+#tabs {
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    text-align: right;
+}
+
+#tabs ul li {
+    display: inline;
+}
+
+#tabs ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#tabs ul li + li:before {
+    content: " | ";
+    padding: 0 10px;
+}

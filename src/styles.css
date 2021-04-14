@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css");
+
+@font-face {
+    font-family: cairo-light;
+    src: url(assets/Fonts/cairo-light.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: cairo-bold;
+    src: url(assets/Fonts/cairo-bold.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: cairo-regular;
+    src: url(assets/Fonts/cairo-regular.otf) format("opentype");
+  }
+
+  body {
+    background-color: #f1f1f1;
+  }
