@@ -1,0 +1,108 @@
+<div class="container-fluid">
+  <div class="jumbotron bg-white">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" id="role-name" placeholder="أسم الدور">
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" id="role-desc" rows="5" placeholder="وصف الدور"></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <select class="form-control form-control-sm mb-3" id="select">
+          <option value="" disabled selected>اختار تردد الظهور</option>
+          <option value="">تردد الظهور</option>
+        </select>
+
+        <span style="font-family: 'cairo-bold', 'arial', sans-serif; font-size: 20px;">مرفقات</span>
+        <label class="custom-file-upload">
+            <input type="file"/>
+            تحميل
+        </label>
+      </div>
+    </div>
+
+    <div class="row" style="font-family: 'cairo-bold', 'arial', sans-serif;">
+        <div class="col-md-2">
+            النوع
+        </div>
+        <div class="col-md-2">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" checked><span style="padding-right: 10px;">ذكر</span>
+                </label>
+              </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 10px;">أنثى</span>
+                </label>
+              </div>
+        </div>
+              
+        
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+    <div class="row" style="font-family: 'cairo-bold', 'arial', sans-serif;">
+        <div class="col-md-2">
+            الحالة
+        </div>
+        <div class="col-md-2">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" checked><span style="padding-right: 10px;">ناشط</span>
+                </label>
+              </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2"><span style="padding-right: 10px;">غير ناشط</span>
+                </label>
+              </div>
+        </div>
+              
+        
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" id="prevbtn" class="btn btn-secondary">السابق</button>
+        
+        <button type="button" id="addbtn" class="btn btn-secondary">اضافة دور</button>
+    </div>
+  </div>
+</div>
+
+<div id="char-list" class="container-fluid">
+    <div style="text-align: right;">
+      <i class="fas fa-star" style="font-size: 25px; "></i>لائحة الشخصيات
+    </div>
+    
+  </div>
+
+<div class="container-fluid mb-5">
+    <table id="role-table" class="table table-striped  table-hover">
+    <thead class="thead-dark">
+        <th>الدور</th>
+        <th>الحالة</th>
+        <th>تردد الظهور</th>
+        <th>الوصف</th>
+        <th>المرفقات</th>
+        <th class="edit">الفعل</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>

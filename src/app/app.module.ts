@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuditionComponent } from './audition/audition.component';
+import { RolesComponent } from './roles/roles.component';
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -14,7 +15,8 @@ import { AuditionComponent } from './audition/audition.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    AuditionComponent
+    AuditionComponent,
+    RolesComponent
   ],
   imports: [
     BrowserModule,

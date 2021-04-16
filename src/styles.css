@@ -19,3 +19,58 @@
   body {
     background-color: #f1f1f1;
   }
+
+  .jumbotron {
+    text-align: right;
+    margin-right: 0;
+    width: 70vw;
+    border-top: solid 15px gold;
+    padding-top: 20px;
+    /* font-family: "cairo-bold", 'arial', sans-serif; */
+}
+
+@media only screen and (max-width: 992px) {
+    .jumbotron {
+        width: 90vw;
+    }
+}
+
+/* ******************** radio *************************************** */
+
+input[type='radio'] {
+  margin-left: 100px;
+  margin-right: 5px;
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:1px solid darkgray;
+  border-radius:50%;
+  outline:none;
+  box-shadow:0 0 5px 0px gray inset;
+}
+input[type='radio']:hover {
+  box-shadow:0 0 5px 0px orange inset;
+}
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:40%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+input[type='radio']:checked:before {
+  background:gold;
+}
+
+/* ********************************************************************************** */
+
+.fa-star {
+  font-size: 6px;
+  color: black;
+  border-radius: 50%;
+  background-color: gold;
+  padding: 1px;
+  vertical-align: middle;
+  margin: auto 5px auto 5px;
+}

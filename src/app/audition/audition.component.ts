@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { read } from 'node:fs';
 
 @Component({
   selector: 'app-audition',
@@ -7,20 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuditionComponent implements OnInit {
 
-  url = "https://cdn.pixabay.com/photo/2021/01/21/17/58/herbstastern-5938056_1280.jpg";
+  public url = "";
+  imagesrc: any;
   constructor() { }
 
   ngOnInit(): void {}
 
-  selectImage(event: any){
-    if (event.target.files) {
+
+  onSelectFile(e: any) {
+    if (e.target.files){
       var reader = new FileReader();
-      reader.readAsDataURL(event.target.files[0]);
-      reader.onload = (event: any) => {
-        this.url = event.target.result; 
+      reader.readAsDataURL(e.target.files[0]);
+      reader.onload = (e: any) => {
+        this.url = e.target.result;
       }
     }
   }
 
-  
 }

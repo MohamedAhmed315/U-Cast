@@ -1,0 +1,62 @@
+.jumbotron {
+    padding-left: 100px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    padding: 6px 12px;
+    cursor: pointer;
+    float: left; 
+    color: gold;
+    background-color: black;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    border-radius: 10px;
+}
+
+#role-name, #role-desc {
+    width: 95%;
+}
+
+#select {
+    font-family: 'cairo-bold', 'arial', sans-serif;
+}
+
+#prevbtn {
+    color: gold;
+    background-color: black;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    transform: translateY(80px);
+    width: 100px;
+    border-radius: 10px;
+}
+
+#addbtn {
+    color: gold;
+    background-color: black;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    transform: translateY(80px);
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 50vw;
+    display: inline;
+}
+
+#char-list {
+    text-align: right;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ******************************* table ****************************************** */
+th {
+    text-align: center;
+}
+
+#role-table {
+    width: 70vw;
+}

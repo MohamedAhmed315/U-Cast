@@ -22,16 +22,6 @@
     color: white;
 }
 
-.fa-star {
-    font-size: 6px;
-    color: black;
-    border-radius: 50%;
-    background-color: gold;
-    padding: 1px;
-    vertical-align: middle;
-    margin: auto 5px auto 5px;
-}
-
 nav a + a:before{
     content: " . ";
     padding: 0 10px;
