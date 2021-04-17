@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuditionComponent implements OnInit {
 
-  public url = "";
+  public url = "../../assets/img/grey.jpg";
   imagesrc: any;
   constructor() { }
 

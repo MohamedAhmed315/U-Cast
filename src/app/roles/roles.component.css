@@ -59,4 +59,16 @@ th {
 
 #role-table {
     width: 70vw;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+}
+
+thead {
+    background-color: rgb(192, 192, 192);
+}
+
+.edit {
+    color: red;
+    background-color: gold;
+    font-size: 20px;
+
 }
