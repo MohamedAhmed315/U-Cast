@@ -10,11 +10,11 @@ const routes: Routes = [
     component : AuditionComponent //home page
   },
   {
-    path: "roles",
+    path: "/roles",
     component : RolesComponent
   },
   {
-    path: "feedback",
+    path: "/feedback",
     component: FeedbackComponent
   }
 ];
