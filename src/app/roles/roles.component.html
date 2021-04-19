@@ -21,93 +21,94 @@
 
         <span style="font-family: 'cairo-bold', 'arial', sans-serif; font-size: 20px;">مرفقات</span>
         <label class="custom-file-upload">
-            <input id="attachment" type="file">
-            تحميل
+          <input id="attachment" type="file">
+          تحميل
         </label>
       </div>
     </div>
 
     <div class="row" style="font-family: 'cairo-bold', 'arial', sans-serif;">
-        <div class="col-md-2">
-            النوع
+      <div class="col-md-2">
+        النوع
+      </div>
+      <div class="col-md-2">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio" checked><span
+              style="padding-right: 10px;">ذكر</span>
+          </label>
         </div>
-        <div class="col-md-2">
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optradio" checked><span style="padding-right: 10px;">ذكر</span>
-                </label>
-              </div>
-        </div>
+      </div>
 
-        <div class="col-md-2">
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 10px;">أنثى</span>
-                </label>
-              </div>
+      <div class="col-md-2">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio"><span style="padding-right: 10px;">أنثى</span>
+          </label>
         </div>
-              
-        
-        <div class="col-md-6">
+      </div>
 
-        </div>
+
+      <div class="col-md-6">
+
+      </div>
     </div>
 
     <div class="row" style="font-family: 'cairo-bold', 'arial', sans-serif;">
-        <div class="col-md-2">
-            الحالة
+      <div class="col-md-2">
+        الحالة
+      </div>
+      <div class="col-md-2">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio2" checked value="ناشط"><span
+              style="padding-right: 10px;">ناشط</span>
+          </label>
         </div>
-        <div class="col-md-2">
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optradio2" checked value="ناشط"><span style="padding-right: 10px;">ناشط</span>
-                </label>
-              </div>
-        </div>
+      </div>
 
-        <div class="col-md-2">
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optradio2" value="غير ناشط"><span style="padding-right: 10px;">غير ناشط</span>
-                </label>
-              </div>
+      <div class="col-md-2">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio2" value="غير ناشط"><span
+              style="padding-right: 10px;">غير ناشط</span>
+          </label>
         </div>
-              
-        
-        <div class="col-md-6">
+      </div>
 
-        </div>
+
+      <div class="col-md-6">
+
+      </div>
     </div>
 
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" id="prevbtn" class="btn btn-secondary">السابق</button>
-        
-        <button type="button" id="addbtn" class="btn btn-secondary" (click)="createrole();">اضافة دور</button>
+    <div class="btn-group" role="group">
+      <button type="button" id="prevbtn" class="btn btn-secondary">السابق</button>
+
+      <button type="button" id="addbtn" class="btn btn-secondary" (click)="createrole();">اضافة دور</button>
     </div>
   </div>
 </div>
 
 <div id="char-list" class="container-fluid">
-    <div style="text-align: right;">
-      <i class="fas fa-star" style="font-size: 25px; "></i>لائحة الشخصيات
-    </div>
-    
+  <div style="text-align: right;">
+    <i class="fas fa-star" style="font-size: 25px; "></i>لائحة الشخصيات
   </div>
 
+</div>
+
 <div class="container-fluid mb-5">
-    <table id="role-table" class="table table-bordered text-center">
+  <table id="role-table" class="table table-bordered text-center">
     <thead class="thead">
-        <th>الدور</th>
-        <th>الحالة</th>
-        <th>تردد الظهور</th>
-        <th>الوصف</th>
-        <th>المرفقات</th>
-        <th>الفعل</th>
+      <th>الدور</th>
+      <th>الحالة</th>
+      <th>تردد الظهور</th>
+      <th>الوصف</th>
+      <th>المرفقات</th>
+      <th>الفعل</th>
     </thead>
     <tbody>
     </tbody>
-</table>
+  </table>
 
-
-<div class="result"></div>
 </div>

@@ -42,7 +42,7 @@ export class RolesComponent implements OnInit {
             <i class="fas fa-pen"
               style="color: black; background-color: gold; padding: 5px; font-wight: bold; font-size: 20px; border-radius: 10px; transform: scaleX(-1);"
 
-              onclick='if (confirm("Do you want to update this role?")) {
+              onclick='if (confirm("Do you want to update this role? (not working)")) {
 
 
                 // update role here

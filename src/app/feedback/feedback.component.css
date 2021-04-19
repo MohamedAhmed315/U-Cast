@@ -1,0 +1,89 @@
+.btn-group {
+    font-family: 'cairo-bold', 'arial', sans-serif;
+}
+
+.btn-light {
+    background-color: white;
+    color: white;
+    font-size: 16px;
+  }
+
+  .btn-light:active, .btn-light:focus {
+    box-shadow: none;
+  }
+
+  .btn-light:hover {
+    background-color: #f1f1f1;
+  }
+
+.fa-chevron-left, .fa-chevron-right {
+    color: gold;
+    font-size: 24px;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#date {
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* ********************************* cards ********************************************* */
+
+img.card-img-top {
+    border-radius: 50%;
+    border: solid 1px gold
+}
+
+div.card {
+    padding: 10px;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+}
+
+.card-btn {
+    padding: 6px 12px;
+    cursor: pointer;
+    color: gold;
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'cairo-light', 'arial', sans-serif;
+}
+
+@media only screen and (max-width: 992px) {
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+/* ********************************** feedback ************************************** */
+
+#feedback  {
+    border: none;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+}
+
+input[type='radio'] {
+    margin-right: 0;
+}
+
+#backbtn {
+    color: gold;
+    background-color: black;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    transform: translateY(50px);
+    width: 100px;
+    border-radius: 10px;
+}
+
+#okbtn {
+    color: gold;
+    background-color: black;
+    font-family: 'cairo-bold', 'arial', sans-serif;
+    transform: translateY(50px);
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 50vw;
+    display: inline;
+}

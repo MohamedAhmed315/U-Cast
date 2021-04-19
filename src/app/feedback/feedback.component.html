@@ -1,0 +1,227 @@
+
+<!-- date and cards -->
+<div class="container-fluid">
+  <div class="jumbotron bg-white text-center">
+    <div class="btn-group " role="group">
+      <!-- date -->
+      <button type="button" class="btn btn-light btn-lg disabled text-muted"> اليوم السابق<i
+          class="fa fa-chevron-right"></i></button>
+      <p id="date">8 أكتوبر 2018</p>
+      <button type="button" class="btn btn-light btn-lg disabled text-muted"><i class="fa fa-chevron-left"></i> اليوم
+        التالي</button>
+    </div>
+
+    <div id="cards" class="container-fluid mt-2">
+      <!-- cards -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/grey.jpg" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Mohamed</h5>
+              <div class=" text-center">
+                <a class="btn card-btn mr-1 mb-1">البروفايل</a>
+                <a class="btn card-btn mr-1 mb-1">النقد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/grey.jpg" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Mohamed</h5>
+              <div class=" text-center">
+                <a class="btn card-btn mr-1 mb-1">البروفايل</a>
+                <a class="btn card-btn mr-1 mb-1">النقد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/grey.jpg" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Mohamed</h5>
+              <div class=" text-center">
+                <a class="btn card-btn mr-1 mb-1">البروفايل</a>
+                <a class="btn card-btn mr-1 mb-1">النقد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/grey.jpg" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Mohamed</h5>
+              <div class=" text-center">
+                <a class="btn card-btn mr-1 mb-1">البروفايل</a>
+                <a class="btn card-btn mr-1 mb-1">النقد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- nesting grid -->
+  <div class="container-fluid">
+    <div id="feedback" class="jumbotron bg-white text-right px-4">
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>هل حضرت الموهبة؟</p>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio1" value="نعم" checked><span
+                    style="padding-right: 10px;">نعم</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio1" value="لا"><span
+                    style="padding-right: 10px;">لا</span>
+                </label>
+              </div>
+              <div class="col-xs-12 mt-3">
+                هل حضرت الموهبة؟<br>
+                <ngb-rating [(rate)]="rate1" [max]="5" dir="ltr">
+                  <ng-template let-fill="fill" let-index="index">
+                    <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>هل تود رؤية أحمد مجددا لهذا المشروع؟</p>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" value="نعم" checked><span
+                    style="padding-right: 10px;">نعم</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" value="لا"><span
+                    style="padding-right: 10px;">لا</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" value="ربما"><span
+                    style="padding-right: 10px;">ربما</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-xs-12 mt-3 mb-3">
+              <p>هل تود رؤية أحمد مجددا لهذا المشروع؟</p>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio3" value="نعم" checked><span
+                    style="padding-right: 10px;">نعم</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio3" value="لا"><span
+                    style="padding-right: 10px;">لا</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio3" value="ربما"><span
+                    style="padding-right: 10px;">ربما</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="Textarea1">لو التالي 5 نجوم، لماذا؟</label>
+            <textarea class="form-control" id="Textarea1" rows="4"></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="col-xs-12">
+                هل حضرت الموهبة؟<br>
+                <ngb-rating [(rate)]="rate2" [max]="5" dir="ltr">
+                  <ng-template let-fill="fill" let-index="index">
+                    <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+              <div class="col-xs-12 mt-3">
+                هل حضرت الموهبة؟<br>
+                <ngb-rating [(rate)]="rate3" [max]="5" dir="ltr">
+                  <ng-template let-fill="fill" let-index="index">
+                    <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>هل تود رؤية أحمد مجددا لهذا المشروع؟</p>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" value="نعم" checked><span
+                    style="padding-right: 10px;">نعم</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" value="لا"><span
+                    style="padding-right: 10px;">لا</span>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio2" value="ربما"><span
+                    style="padding-right: 10px;">ربما</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="Textarea1">لو التالي 5 نجوم، لماذا؟</label>
+            <textarea class="form-control" id="Textarea1" rows="4"></textarea>
+          </div>
+
+        </div>
+      </div>
+    <!-- buttons -->
+      <div class="btn-group" role="group">
+        <button type="button" id="backbtn" class="btn btn-secondary">رجوع</button>
+        
+        <button type="button" id="okbtn" class="btn btn-secondary">تأكيد</button>
+      </div>
+    </div>
+
+  
+
+  </div>
+</div>

@@ -7,8 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuditionComponent } from './audition/audition.component';
 import { RolesComponent } from './roles/roles.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,14 @@ import { RolesComponent } from './roles/roles.component';
     NavbarComponent,
     FooterComponent,
     AuditionComponent,
-    RolesComponent
+    RolesComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
